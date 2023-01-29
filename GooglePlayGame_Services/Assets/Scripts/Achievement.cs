@@ -13,7 +13,7 @@ public class Achievement : MonoBehaviour
     {
         Social.ShowAchievementsUI();
     }
-
+  
     public void DoGrantAchievement(string _achievement)
     {
         Social.ReportProgress(_achievement,
@@ -59,7 +59,7 @@ public class Achievement : MonoBehaviour
     public void DoRevealAchievement(string _achievement)
     {
         Social.ReportProgress(_achievement,
-            1.00f,
+            0.00f,
             (bool success) =>
             {
                 if (success) // if success is true 
@@ -108,16 +108,16 @@ public class Achievement : MonoBehaviour
 
     public void GrantIncrementalBtn()
     {
-        DoGrantAchievement(Code_Test.GPGSids.achievement_increment_achievement);
+        DoIncrementalAchievement(Code_Test.GPGSids.achievement_increment_achievement);
     }
     public void RevealAchievementBtn()
     {
-        DoGrantAchievement(Code_Test.GPGSids.achievement_hidden_unlock_achievement);
+        DoRevealAchievement(Code_Test.GPGSids.achievement_hidden_unlock_achievement);
     }
 
     public void RevealIncrementalBtn()
     {
-        DoGrantAchievement(Code_Test.GPGSids.achievement_hidden_incremental_achievement);
+        DoRevealAchievement(Code_Test.GPGSids.achievement_hidden_incremental_achievement);
     }
 
     public void GrantHiddenAchievementBtn()
@@ -127,6 +127,6 @@ public class Achievement : MonoBehaviour
 
     public void HiddenlIncrementalAchievementBtn()
     {
-        DoGrantAchievement(Code_Test.GPGSids.achievement_hidden_incremental_achievement);
+        DoIncrementalAchievement (Code_Test.GPGSids.achievement_hidden_incremental_achievement);
     }
 }

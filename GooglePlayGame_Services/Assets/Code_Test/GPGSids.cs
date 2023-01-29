@@ -28,6 +28,7 @@ public static class GPGSids
         public const string achievement_unlock_achievement = "CgkIjo7O8N4OEAIQAQ"; // <GPGSID>
         public const string achievement_hidden_incremental_achievement = "CgkIjo7O8N4OEAIQBA"; // <GPGSID>
         public const string achievement_hidden_unlock_achievement = "CgkIjo7O8N4OEAIQAw"; // <GPGSID>
+        public const string leaderboard_test_leaderboards = "CgkIjo7O8N4OEAIQBQ"; // <GPGSID>
         public const string achievement_increment_achievement = "CgkIjo7O8N4OEAIQAg"; // <GPGSID>
 
 }

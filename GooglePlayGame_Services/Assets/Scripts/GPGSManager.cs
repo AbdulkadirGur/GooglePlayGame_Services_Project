@@ -4,7 +4,7 @@ using UnityEngine;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using UnityEngine.UI;
-using GooglePlayGames;
+
 using GooglePlayGames.Android;
 
 
@@ -16,6 +16,7 @@ public class GPGSManager : MonoBehaviour
     public Text statusTxt;
     public Text descriptionTxt;
     public GameObject HomeBtnGo;
+    public GameObject SignInBtn;
 
     void Start()
     {
@@ -43,6 +44,7 @@ public class GPGSManager : MonoBehaviour
                statusTxt.text = "Successfully Authenticated";
                descriptionTxt.text = "Hello " + Social.localUser.userName + "You have an ID of " + Social.localUser.id;
                HomeBtnGo.SetActive(true);
+               SignInBtn.SetActive(false);
            }
            else
            {
